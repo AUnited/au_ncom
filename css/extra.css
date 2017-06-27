@@ -1,0 +1,25 @@
+/* tables for buttonset */
+.subtable {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 3px;
+    background: #167cce;
+    color: #656665;
+    border: 10px solid #167cce;
+    border-radius: 20px;
+}
+.subtable th {
+    font-size: 18px;
+    padding: 10px;
+}
+.subtable td {
+    background: linear-gradient(#167cce 0%, #004391 100%);
+    padding: 10px;
+}
+.subtable a {
+    text-decoration: none;
+    color: #fff;
+}
