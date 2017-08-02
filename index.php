@@ -120,18 +120,14 @@ if ($this->params->get('logoFile') && $this->params->get('logotitle') == 1)
 }
 elseif ($this->params->get('logoFile') && $this->params->get('sitetitle') && $this->params->get('logotitle') == 0)
 {
-	$logo = '<div style="display: inline;"><img src="' . JUri::root() . $this->params->get('logoFile') . '" alt="' . $sitename . '" /></div><table border="2" width="200px" height="900px" style="color: #fff; display: inline; padding: 0;"><tr><td><span class="site-title" title="' . $sitename . '">' . htmlspecialchars($this->params->get('fulltitle'), ENT_COMPAT, 'UTF-8') . '</span>' .'</td></tr></table>';
+	$logo = '<div style="display: inline;"><img src="' . JUri::root() . $this->params->get('logoFile') . '" alt="' . $sitename . '" /></div><table border="2" width="200px" style="color: #fff; display: inline; padding: 0;"><tr><td><span class="site-title" title="' . $sitename . '">' . htmlspecialchars($this->params->get('fulltitle'), ENT_COMPAT, 'UTF-8') . '</span>' .'</td></tr></table>';
 }
 else
 {
 	$logo = '<span class="site-title" title="' . $sitename . '">' . $sitename . '</span>';
 }
 if ($this->params->get('iconFile')) {
-     $favlink = '<link rel="shortcut icon" type="image/png" href="'.JUri::root() . $this->params->get('iconFile').'" /> ';
-}
-else
-{
-    $favlink = '<link rel="shortcut icon" type="image/png" href="'.$this->baseurl . '/templates/' . $this->template . '/favicon.ico'.'" /> ';
+     $favlink = '<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="'.JUri::root() . $this->params->get('iconFile').'" /> ';
 }
 // Background param
 $bg='';
@@ -144,8 +140,8 @@ if ($this->params->get('bgTexture'))
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <jdoc:include type="head" />
     <?php echo $favlink; ?>
-	<jdoc:include type="head" />
 	<!--[if lt IE 9]><script src="<?php echo JUri::root(true); ?>/media/jui/js/html5.js"></script><![endif]-->
     <?php echo $bg; ?>
 </head>
