@@ -71,7 +71,7 @@
 
 				<field name="sitetitle"  type="text" default=""	label="JGLOBAL_TITLE" description="JFIELD_ALT_PAGE_TITLE_LABEL"	filter="string" />
 
-				<field name="fulltitle"  type="text" default=""	label=" Full JGLOBAL_TITLE" description="JFIELD_ALT_PAGE_TITLE_LABEL"	filter="string" />
+				<field name="fulltitle"  type="text" default=""	label="TPL_ASI_FULL_TITLE_LABEL" description="TPL_ASI_FULL_TITLE_DESC"	filter="string" />
 
 				<field name="sitedescription"  type="text" default="" label="JGLOBAL_DESCRIPTION" description="JGLOBAL_SUBHEADING_DESC"	filter="string" />
 
