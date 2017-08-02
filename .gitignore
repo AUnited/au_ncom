@@ -1,12 +1,7 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
-
 # IntelliJ project files
-.idea
-*.iml
-out
-gen### Windows template
+.idea/*
+
+### Windows template
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
@@ -26,6 +21,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
 ### macOS template
 *.DS_Store
 .AppleDouble
@@ -33,7 +29,6 @@ $RECYCLE.BIN/
 
 # Icon must end with two \r
 Icon
-
 
 # Thumbnails
 ._*
