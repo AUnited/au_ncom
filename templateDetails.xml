@@ -62,6 +62,10 @@
 				<field name="templateColor" class="" type="color" default="#08C" label="TPL_ASI_COLOR_LABEL" description="TPL_ASI_COLOR_DESC" />
 
 				<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7" label="TPL_ASI_BACKGROUND_COLOR_LABEL" description="TPL_ASI_BACKGROUND_COLOR_DESC" />
+				<field name="preheader" type="radio" class="btn-group btn-group-yesno"	default="0"	label="TPL_ASI_FONT_LABEL" description="TPL_ASI_FONT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
 
                 <field name="iconFile" class="" type="media" default=""	label="TPL_ASI_FAVICON_LABEL" description="TPL_ASI_FAVICON_DESC" />
 

@@ -30,6 +30,7 @@ $itemid   = $app->input->getCmd('Itemid', '');
 //Local params
 $sitename = $this->params->get('sitetitle');
 $nocopy   = $this->params->get('noCopy');
+$preheader   = $this->params->get('preheader', 0);
 $startyear  = $this->params->get('startyear');
 
 if($task == "edit" || $layout == "form" )
@@ -158,7 +159,9 @@ if ($this->params->get('bgTexture'))
 	<div class="body">
 		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : ''); ?>">
 			<!-- Header -->
-            <div class="preheader"><jdoc:include type="modules" name="preheader" style="xhtml" /></div>
+            <?php if($preheader){
+                echo '<div class="preheader"><jdoc:include type="modules" name="preheader" style="xhtml" /></div>';}
+                ?>
 
 			<header class="header">
                 <div id="hwrapper">
