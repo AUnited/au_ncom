@@ -48,3 +48,8 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#Joomla packets
+*.zip
+*.tar.gz
+*.tgz
