@@ -62,7 +62,7 @@
 				<field name="templateColor" class="" type="color" default="#08C" label="TPL_ASI_COLOR_LABEL" description="TPL_ASI_COLOR_DESC" />
 
 				<field name="templateBackgroundColor" class="" type="color" default="#F4F6F7" label="TPL_ASI_BACKGROUND_COLOR_LABEL" description="TPL_ASI_BACKGROUND_COLOR_DESC" />
-				<field name="preheader" type="radio" class="btn-group btn-group-yesno"	default="0"	label="TPL_ASI_FONT_LABEL" description="TPL_ASI_FONT_DESC">
+				<field name="preheader" type="radio" class="btn-group btn-group-yesno"	default="0"	label="TPL_ASI_PREHEADER" description="TPL_ASI_PREHEADER_DESC">
 					<option value="1">JYES</option>
 					<option value="0">JNO</option>
 				</field>
@@ -79,24 +79,23 @@
 
 				<field name="sitedescription"  type="text" default="" label="JGLOBAL_DESCRIPTION" description="JGLOBAL_SUBHEADING_DESC"	filter="string" />
 
-				<field name="googleFont" type="radio" class="btn-group btn-group-yesno"	default="1"	label="TPL_ASI_FONT_LABEL" description="TPL_ASI_FONT_DESC">
-					<option value="1">JYES</option>
-					<option value="0">JNO</option>
-				</field>
-
                 <field name="noCopy" type="radio" class="btn-group btn-group-yesno"	default="0"	label="TPL_ASI_NOCOPY_LABEL" description="TPL_ASI_NOCOPY_DESC">
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
                 </field>
 
-                <field name="logotitle" type="radio" class="btn-group btn-group-yesno"	default="2"	label="TPL_ASI_NOCOPY_LABEL" description="TPL_ASI_NOCOPY_DESC">
+                <field name="logotitle" type="radio" class="btn-group btn-group-yesno"	default="2"	label="TPL_ASI_LOGOTITLE" description="TPL_ASI_LOGOTITLE_DESC">
                     <option value="2">JGLOBAL_TITLE</option>
                     <option value="1">TPL_ASI_LOGO_LABEL</option>
                     <option value="0">JALL</option>
                 </field>
 
 
-                <field name="startyear" class="" type="integer" first="1900" last="2100" step="1" default="2000" label="TPL_ASI_STARTYEAR_LABEL"	description="TPL_ASI_STARTYEAR_DESC" />
+                <field name="startyear" class="" type="integer" first="1900" last="2100" step="1" default="2000" label="TPL_ASI_STARTYEAR_LABEL" description="TPL_ASI_STARTYEAR_DESC" />
+				<field name="googleFont" type="radio" class="btn-group btn-group-yesno"	default="1"	label="TPL_ASI_FONT_LABEL" description="TPL_ASI_FONT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
 
                 <field name="googleFontName" class="" type="text" default="Open+Sans" label="TPL_ASI_FONT_NAME_LABEL"	description="TPL_ASI_FONT_NAME_DESC" />
 
